@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="scroll-indicator"></div>
+
+  <header id="hero">
+    <video autoplay loop muted playsinline id="video-background">
+  <source src="mixkit-html-code-on-a-dark-background-45378-hd-ready.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+    <nav class="navbar">
+      <span class="logo">Binayak's Portfolio</span>
+
+      <button
+        class="menu-toggle"
+        id="menu-button"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Binayak Chhetri</h1>
+      <p>Frontend Developer &amp; UI/UX Enthusiast</p>
+      <a href="#projects" class="hero-btn">View My Work</a>
+    </div>
+  </header>
+
+  <div class="photo-center">
+  <img src="myimg.jpg" class="glow-photo" alt="My Photo">
+</div>
+
+  <main>
+ 
+    <section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a frontend developer with a passion for designing clean, responsive, and
+    visually engaging web applications. I enjoy turning concepts into interactive
+    experiences using HTML5, CSS3, JavaScript, and modern UI/UX practices.
+  </p>
+
+  <p>
+    I pay strong attention to layout structure, typography, visual hierarchy, and
+    accessibility. Whether using Flexbox, CSS Grid, or media queries, I aim to create
+    interfaces that adapt seamlessly across all devices, maintaining both beauty and
+    usability.
+  </p>
+
+  <p>
+    Beyond coding, I enjoy problem-solving, experimenting with animations and
+    transitions, and continuously improving my workflow. I am committed to building
+    projects that not only function well but also provide an enjoyable and meaningful
+    experience for the user.
+  </p>
+</section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-badge">HTML5</div>
+        <div class="skill-badge">CSS3</div>
+        <div class="skill-badge">JavaScript</div>
+        <div class="skill-badge">Responsive Design</div>
+        <div class="skill-badge">Git &amp; GitHub</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div id="projects-grid">
+        <article class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal portfolio built with HTML, CSS Grid, and JavaScript.</p>
+          <a href="#" class="project-link">View Project</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Todo App</h3>
+          <p>A simple JavaScript app to add, complete, and delete daily tasks.</p>
+          <a href="#" class="project-link">View Project</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Landing Page</h3>
+          <p>A modern landing page with a hero section, features, and a contact form.</p>
+          <a href="#" class="project-link">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>Have a question or want to work together? Send me a message.</p>
+
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required placeholder="Your message"></textarea>
+        </div>
+
+        <button type="submit" class="hero-btn">Send Message</button>
+      </form>
+
+      <!-- Form feedback message -->
+      <div id="form-message" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Binayak. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
